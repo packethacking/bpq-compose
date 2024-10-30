@@ -33,6 +33,7 @@ services:
     environment:
       - ROUNDCUBEMAIL_DEFAULT_HOST=imapapi
       - ROUNDCUBEMAIL_SMTP_SERVER=host.docker.internal
+      - ROUNDCUBEMAIL_DEFAULT_PORT=2143
     restart: unless-stopped
     extra_hosts:
       - host.docker.internal:host-gateway
