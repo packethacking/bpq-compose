@@ -4,7 +4,7 @@ services:
     ports:
       - 8080:8080
     environment:
-      - bpq__uri=host.docker.internal
+      - bpq__uri=http://host.docker.internal:8008
     restart: unless-stopped
     extra_hosts:
       - host.docker.internal:host-gateway
