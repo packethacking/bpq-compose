@@ -6,6 +6,7 @@ These include:
 
 * [HTTP API](https://github.com/M0LTE/bpqapi/) - Provide a Swagger compatible HTTP API
 * [IMAP](https://github.com/packethacking/bpq-imap-bulletins) - Export Personal and Bulletin mail via IMAP
+* [RoundCube](https://roundcube.net/) - Mail interface
 * [Mosquitto](https://mosquitto.org/) - MQTT server for event output
 
 ## Starting the services.
@@ -33,3 +34,10 @@ MQTT_PASS=bpqmon
 
 None of these API extensions are encrypted. They also ship with default passwords.
 *DO NOT* expose these to the public internet.
+
+## Relevant Ports
+
+* IMAP - 143
+* HTTP API - 8080
+* RoundCube - 8000
+* MQTT - 1883
