@@ -40,8 +40,8 @@ services:
   bpqmon:
     image: ghcr.io/packethacking/bpqmonmqtt:main
     environment:
-      - BQPMON_MQTT_HOSTNAME=mosquitto
-      - BQPMON_MQTT_PORT=1883
-      - BQPMON_MQTT_USERNAME=bpqmon
-      - BQPMON_MQTT_PASSWORD=bpqmon
+      - BPQMON_MQTT_HOSTNAME=mosquitto
+      - BPQMON_MQTT_PORT=1883
+      - BPQMON_MQTT_USERNAME=bpqmon
+      - BPQMON_MQTT_PASSWORD=bpqmon
     restart: unless-stopped
