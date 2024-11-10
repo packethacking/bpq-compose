@@ -45,3 +45,4 @@ services:
       - BPQMON_MQTT_USERNAME=bpqmon
       - BPQMON_MQTT_PASSWORD=bpqmon
     restart: unless-stopped
+    tty: true
