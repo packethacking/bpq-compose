@@ -8,6 +8,7 @@ These include:
 * [IMAP](https://github.com/packethacking/bpq-imap-bulletins) - Export Personal and Bulletin mail via IMAP
 * [RoundCube](https://roundcube.net/) - Mail interface
 * [Mosquitto](https://mosquitto.org/) - MQTT server for event output
+* [BPQMON](https://github.com/packethacking/bpqmonmqtt) - View BPQ activity in the terminal via docker logs
 
 ## Starting the services.
 
