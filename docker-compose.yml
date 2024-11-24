@@ -46,3 +46,8 @@ services:
       - BPQMON_MQTT_PASSWORD=bpqmon
     restart: unless-stopped
     tty: true
+  bpqmonweb:
+    image: ghcr.io/packethacking/bpqmonweb:main
+    ports:
+      - 8081:80
+    restart: unless-stopped
