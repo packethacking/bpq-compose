@@ -31,6 +31,11 @@ MQTT_USER=bpqmon
 MQTT_PASS=bpqmon
 ```
 
+The IMAPAPI service also includes an SMTP server.
+In order to use this, the native BPQ SMTP port must be disabled.
+
+Ensure that 'SMTP Port' is 0 in Configuration.  
+
 ## Security Note
 
 None of these API extensions are encrypted. They also ship with default passwords.
