@@ -1,3 +1,5 @@
+volumes:
+  roundcubedb:
 services:
   bpqapi:
     image: m0lte/bpqapi
@@ -33,12 +35,15 @@ services:
       - 8000:80
     environment:
       - ROUNDCUBEMAIL_DEFAULT_HOST=imapapi
-      - ROUNDCUBEMAIL_SMTP_SERVER=host.docker.internal
+      - ROUNDCUBEMAIL_SMTP_SERVER=imapapi
       - ROUNDCUBEMAIL_DEFAULT_PORT=2143
       - ROUNDCUBEMAIL_SMTP_PORT=2025
+      - ROUNDCUBEMAIL_DB_TYPE=sqlite
     restart: unless-stopped
     extra_hosts:
       - host.docker.internal:host-gateway
+    volumes:
+      - roundcubedb:/var/roundcube/db
   bpqmon:
     image: ghcr.io/packethacking/bpqmonmqtt:main
     environment:

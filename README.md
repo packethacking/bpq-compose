@@ -34,7 +34,7 @@ MQTT_PASS=bpqmon
 The IMAPAPI service also includes an SMTP server.
 In order to use this, the native BPQ SMTP port must be disabled.
 
-Ensure that 'SMTP Port' is 0 in Configuration.  
+Ensure that 'SMTP Port' is 0 in Configuration.                      
 
 ## Security Note
 
