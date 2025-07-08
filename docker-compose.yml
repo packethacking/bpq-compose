@@ -8,6 +8,8 @@ services:
     environment:
       - bpq__uri=http://host.docker.internal:8008
     restart: unless-stopped
+    volumes:
+      - ./bpqapi:/app/data
     extra_hosts:
       - host.docker.internal:host-gateway
   imapapi:
